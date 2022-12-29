@@ -62,16 +62,16 @@
     <div class="container d-flex align-items-center justify-content-lg-between">
         <h1 class="logo me-auto me-lg-0">
             <a href="#hero">
-<!--                <img class="img-fluid mb-1"-->
-<!--                     src="assets/img/favicon/favicon.png"-->
-<!--                     width="50" height="30" alt="..."/>-->
+                <!--                <img class="img-fluid mb-1"-->
+                <!--                     src="assets/img/favicon/favicon.png"-->
+                <!--                     width="50" height="30" alt="..."/>-->
                 <img class="img-fluid mb-1"
                      src="assets/img/favicon/LOGO.PNG"
                      alt="assets/img/favicon/favicon.png"
                      width="50" height="30" alt="..."
                      onmouseover="this.src='assets/img/favicon/favicon.png'"
                      onmouseleave="this.src='assets/img/favicon/LOGO.PNG'"
-                    onmo/>
+                     onmo/>
                 ccommit
                 <!--          <span style="color: darkgreen">.</span>-->
             </a></h1>
@@ -171,18 +171,22 @@
 
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                    <img src="assets/img/about.jpg" class="img-fluid" alt="" style="margin-top: 70px;">
+                    <img src="assets/img/about.jpg" class="img-fluid" alt="" style="margin-top: 100px;">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
                      data-aos-delay="100">
                     <div class="section-title">
                         <h2>ccommit 소개</h2>
                         <h3>C-COMMIT 이란?</h3>
+                        <!--                        <br>-->
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> C(Career)는 개발, 직업, 직장 등을 걸쳐온 경력을 뜻합니다.</li>
+                            <li><i class="ri-check-double-line"></i> Commit은 전념하다, 기록하다, 맡기다, 위임하다 의 의미를 지닙니다.</li>
+                        </ul>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        <strong style="color:#FFC451;font-size: 25px;">개발에 전념하다</strong>
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </div>
-                    <ul>
-                        <li><i class="ri-check-double-line"></i> C(Career)는 직업, 직장, 개발 등을 걸쳐온 경력을 뜻합니다.</li>
-                        <li><i class="ri-check-double-line"></i> Commit은 전념하다, 기록하다, 맡기다, 위임하다 의 의미를 지닙니다.</li>
-                    </ul>
                     <p data-v-7f35affe="" class="desc text-white-75 mb-4 slideToUp">
                         ccommit은 단순히 서비스를 만드는 것에 그치지 않고, 더 깊은 곳을 보고 <strong>설계할 수 있는 개발자</strong>로 성장하는 것을 추구합니다.
                         <br><br>
@@ -420,152 +424,104 @@
                 <p>프로젝트</p>
             </div>
 
-<!--            <div class="row" data-aos="fade-up" data-aos-delay="100">-->
-<!--                <div class="col-lg-12 d-flex justify-content-center">-->
-<!--                    <ul id="portfolio-flters">-->
-<!--                        <li data-filter="*" class="filter-active">All</li>-->
-<!--                        <li data-filter=".filter-app">App</li>-->
-<!--                        <li data-filter=".filter-card">Card</li>-->
-<!--                        <li data-filter=".filter-web">Web</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-publish">완료</li>
+                        <li data-filter=".filter-ing">진행중</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-publish">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>news</h4>
+                            <p>네이버 뉴스 서비스의 백엔드 시스템</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/j-lab-edu/news/tree/main"
+                                   target="_blank"
+                                   title="news"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-publish">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>used-market-server</h4>
+                            <p>번개장터 같은 중고거래 사이트</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/j-lab-edu/used-market-server"
+                                   title="used-market-server"
+                                   target="_blank"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ing">
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
+                            <h4>idolTicketing</h4>
+                            <p>인터파크 티켓팅 같은 백엔드 서버</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="https://github.com/j-lab-edu/idolTicketing"
+                                   title="idolTicketing"
+                                   target="_blank"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ing">
                     <div class="portfolio-wrap">
                         <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
+                            <h4>community-server</h4>
+                            <p>inven 과 같은 커뮤니티 서비스의 벡엔드 서버</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                <a href="https://github.com/j-lab-edu/community-server"
+                                   title="community-server"
+                                   target="_blank"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ing">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>shop-server</h4>
+                            <p>네이버 쇼핑 같은 쇼핑 백엔드 시스템</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/j-lab-edu/shop-server"
+                                   title="shop-server"
+                                   target="_blank"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ing">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>FundingServer</h4>
+                            <p>와디즈 같은 펀딩 시스템의 백엔드 서버</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/j-lab-edu/FundingServer"
+                                   title="FundingServer"
+                                   target="_blank"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 2</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 2</h4>
-                            <p>Web</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 1</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 3</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -580,13 +536,13 @@
                 <p>멘티 현황</p>
             </div>
             <div class="row no-gutters">
-<!--                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"-->
-<!--                     data-aos="fade-right" data-aos-delay="100"></div>-->
+                <!--                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"-->
+                <!--                     data-aos="fade-right" data-aos-delay="100"></div>-->
                 <img src="assets/img/counts-img.jpg" class="testimonial-img" alt="" style="width:550px; height:350px;">
                 <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
                      data-aos-delay="100">
                     <div class="content d-flex flex-column justify-content-center">
-<!--                        <h3>수강생 현황</h3>-->
+                        <!--                        <h3>수강생 현황</h3>-->
                         <div class="row">
                             <div class="col-md-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
@@ -622,7 +578,7 @@
                             <div class="col-md-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-award"></i>
-                                    <p >졸업생 평균 연봉</p>
+                                    <p>졸업생 평균 연봉</p>
                                     <span data-purecounter-start="0" data-purecounter-end="4300"
                                           data-purecounter-duration="4" class="purecounter"
                                           style="padding-top:6px;"></span>
@@ -647,7 +603,7 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-<!--                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
+                            <!--                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
                             <h3>정OO</h3>
                             <h4>1년차 서버 개발자</h4>
                             <p>
@@ -664,7 +620,7 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-<!--                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
+                            <!--                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
                             <h3>최OO</h3>
                             <h4>전공자 취업 준비</h4>
                             <p>
@@ -718,49 +674,49 @@
                             </p>
                         </div>
                     </div>
-<!--                    <div class="swiper-slide">-->
-<!--                        <div class="testimonial-item">-->
-<!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
-<!--                            <h3>윤OO</h3>-->
-<!--                            <h4>전공자 취업 준비</h4>-->
-<!--                            <p>-->
-<!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
-<!--                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam-->
-<!--                                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.-->
-<!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <!--                    <div class="swiper-slide">-->
+                    <!--                        <div class="testimonial-item">-->
+                    <!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
+                    <!--                            <h3>윤OO</h3>-->
+                    <!--                            <h4>전공자 취업 준비</h4>-->
+                    <!--                            <p>-->
+                    <!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
+                    <!--                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam-->
+                    <!--                                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.-->
+                    <!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
+                    <!--                            </p>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
 
-<!--                    <div class="swiper-slide">-->
-<!--                        <div class="testimonial-item">-->
-<!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
-<!--                            <h3>곽OO</h3>-->
-<!--                            <h4>2년차 서버 개발자</h4>-->
-<!--                            <p>-->
-<!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
-<!--                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat-->
-<!--                                minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore-->
-<!--                                labore illum veniam.-->
-<!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <!--                    <div class="swiper-slide">-->
+                    <!--                        <div class="testimonial-item">-->
+                    <!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
+                    <!--                            <h3>곽OO</h3>-->
+                    <!--                            <h4>2년차 서버 개발자</h4>-->
+                    <!--                            <p>-->
+                    <!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
+                    <!--                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat-->
+                    <!--                                minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore-->
+                    <!--                                labore illum veniam.-->
+                    <!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
+                    <!--                            </p>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
 
-<!--                    <div class="swiper-slide">-->
-<!--                        <div class="testimonial-item">-->
-<!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
-<!--                            <h3>곽OO</h3>-->
-<!--                            <h4>Entrepreneur</h4>-->
-<!--                            <p>-->
-<!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
-<!--                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster-->
-<!--                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam-->
-<!--                                culpa fore nisi cillum quid.-->
-<!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
+                    <!--                    <div class="swiper-slide">-->
+                    <!--                        <div class="testimonial-item">-->
+                    <!--&lt;!&ndash;                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">&ndash;&gt;-->
+                    <!--                            <h3>곽OO</h3>-->
+                    <!--                            <h4>Entrepreneur</h4>-->
+                    <!--                            <p>-->
+                    <!--                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>-->
+                    <!--                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster-->
+                    <!--                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam-->
+                    <!--                                culpa fore nisi cillum quid.-->
+                    <!--                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>-->
+                    <!--                            </p>-->
+                    <!--                        </div>-->
+                    <!--                    </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -782,7 +738,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                         <div class="member-img">
-<!--                            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">-->
+                            <!--                            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">-->
                             <div class="social">
                                 <a href="#"><i class="bi bi-twitter"></i></a>
                                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -791,70 +747,15 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <a>ALEX(대표)</a> <br>
+                            <a  style="color:#FFC451;">ALEX(대표)</a> <br>
                             <strong> - 넥슨 서버 개발자</strong>
                             <hr/>
-                            <span>- 카카오, 넷마블 등 여러 대기업 합격 최종 경험 보유</span>
-                            <span>- 각종 개발 단체 경험 및 수상 이력 보유 </span>
+                            <span>- 카카오, 넷마블 등 여러 대기업 합격 최종 경험</span>
+                            <span>- 각종 개발 단체 경험 및 수상 </span>
                             <span>- 개발 경력 6년 이상</span>
                         </div>
                     </div>
                 </div>
-
-                <!--                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-                <!--                    <div class="member" data-aos="fade-up" data-aos-delay="200">-->
-                <!--                        <div class="member-img">-->
-                <!--                            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">-->
-                <!--                            <div class="social">-->
-                <!--                                <a href="#"><i class="bi bi-twitter"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-facebook"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-instagram"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-linkedin"></i></a>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                        <div class="member-info">-->
-                <!--                            <h4>Sarah Jhonson</h4>-->
-                <!--                            <span>Product Manager</span>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-                <!--                    <div class="member" data-aos="fade-up" data-aos-delay="300">-->
-                <!--                        <div class="member-img">-->
-                <!--                            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">-->
-                <!--                            <div class="social">-->
-                <!--                                <a href="#"><i class="bi bi-twitter"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-facebook"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-instagram"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-linkedin"></i></a>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                        <div class="member-info">-->
-                <!--                            <h4>William Anderson</h4>-->
-                <!--                            <span>CTO</span>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">-->
-                <!--                    <div class="member" data-aos="fade-up" data-aos-delay="400">-->
-                <!--                        <div class="member-img">-->
-                <!--                            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">-->
-                <!--                            <div class="social">-->
-                <!--                                <a href="#"><i class="bi bi-twitter"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-facebook"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-instagram"></i></a>-->
-                <!--                                <a href="#"><i class="bi bi-linkedin"></i></a>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                        <div class="member-info">-->
-                <!--                            <h4>Amanda Jepson</h4>-->
-                <!--                            <span>Accountant</span>-->
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
             </div>
 
         </div>
@@ -869,19 +770,25 @@
             </div>
             <div class="section-title row justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <span style="font-size:2.0em;">
+                    <span style="font-size:1.5em;">
                         <a href="https://form.office.naver.com/form/responseView.cmd?formkey=OGJlZjEwZTAtZWQ3NC00Y2M3LWIzY2EtODFiYjg1OGMxNGJj&sourceId=editor"
-                           style="color:blue;text-decoration:underline;"
+                           style="color:#FFC451;text-decoration:underline;"
                            target="_blank">신청서</a></span>
                     <span style="font-size:1.3em;">
-                        를 작성해주시면 '화상 회의(Zoom)' 를 통해 <br> 🌟무료로 모의면접 방식의 상담과 피드백을 제공해드립니다!🌟</span>
+                        를 작성해주시면 '화상 회의(Zoom)' 를 통해 <br>
+                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        무료로 모의면접 방식의 상담과 피드백을 제공해드립니다!
+                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                    </span>
                 </div>
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <a href="https://open.kakao.com/o/ss87OqVe" target="_blank"><img class="img-fluid mb-1"
-                         src="assets/img/favicon/product_kakaotalkconsult_logo_img.png"
-                         width="200" height="100" alt="..."/> </a>
+                    <a href="https://open.kakao.com/o/ss87OqVe" target="_blank">
+                        <img class="img-fluid mb-1"
+                             src="assets/img/favicon/product_kakaotalkconsult_logo_img.png"
+                             width="200" height="100"
+                             alt="..."/> </a>
 
                 </div>
             </div>
@@ -903,14 +810,17 @@
                         <p>
                             경기도 성남시 분당구 <br>
                             장미로 102<br><br>
-<!--                            <strong>Phone:</strong> +1 5589 55488 55<br>-->
                             <strong>Email:</strong> topojs8@naver.com<br>
                         </p>
                         <div class="social-links mt-3">
-                            <a href="https://www.facebook.com/ccommit" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                            <a href="https://www.instagram.com/c__commit/?igshid=YmMyMTA2M2Y%3D" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/ccommit-5680b6204/" class="linkedin"  target="_blank"><i class="bx bxl-linkedin"></i></a>
-                            <a href="https://www.youtube.com/@ccommit9983" class="youtube" target="_blank"><i class="bx bxl-youtube" ></i></a>
+                            <a href="https://www.facebook.com/ccommit" class="facebook" target="_blank"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/c__commit/?igshid=YmMyMTA2M2Y%3D" class="instagram"
+                               target="_blank"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ccommit-5680b6204/" class="linkedin" target="_blank"><i
+                                    class="bx bxl-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@ccommit9983" class="youtube" target="_blank"><i
+                                    class="bx bxl-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -919,7 +829,7 @@
                     <h4>자주 묻는 질문</h4>
                     <details>
                         <summary>멘토링 장소는 어떻게 정하나요?</summary>
-                        <span  style="color:gray">오프라인과 온라인 선택이 가능하십니다.
+                        <span style="color:gray">오프라인과 온라인 선택이 가능하십니다.
                         오프라인의 경우 경기도 성남시 분당구 야탑역 근처 카페에서 진행합니다. <br>
                         온라인의 경우 Zoom 링크를 수업 시간 전에 전달드립니다.</span>
                     </details>
@@ -943,35 +853,7 @@
                         <summary>멘토링 시작 전 준비할 사항이 있을까요?</summary>
                         <span style="color:gray">멘토와 상담 전 포트폴리오가 있다면 정리 부탁드립니다. 그외엔 상담시에 말씀드립니다.</span>
                     </details>
-<!--                    <ul>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">개발을 완전 처음 하는데 수강할 수 있을까요?</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">환불 정책은 어떻게 되나요?</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">멘토링 비용 외에 추가 비용이 있을까요?</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">멘토링 시작 날짜는 정확히 언제인가요?</a></li>-->
-<!--                    </ul>-->
                 </div>
-
-<!--                <div class="col-lg-3 col-md-6 footer-links">-->
-<!--                    <h4>Our Services</h4>-->
-<!--                    <ul>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
-<!--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-
-<!--                <div class="col-lg-4 col-md-6 footer-newsletter">-->
-<!--                    <h4>Our Newsletter</h4>-->
-<!--                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>-->
-<!--                    <form action="" method="post">-->
-<!--                        <input type="email" name="email"><input type="submit" value="Subscribe">-->
-<!--                    </form>-->
-
-<!--                </div>-->
-
             </div>
         </div>
     </div>
@@ -980,13 +862,6 @@
         <div class="copyright">
             <div class="small text-center text-muted">Copyright &copy; 2022 CCommit Company</div>
         </div>
-        <!--      <div class="credits">-->
-        <!--        &lt;!&ndash; All the links in the footer should remain intact. &ndash;&gt;-->
-        <!--        &lt;!&ndash; You can delete the links only if you purchased the pro version. &ndash;&gt;-->
-        <!--        &lt;!&ndash; Licensing information: https://bootstrapmade.com/license/ &ndash;&gt;-->
-        <!--        &lt;!&ndash; Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ccommit-free-multipurpose-html-bootstrap-template/ &ndash;&gt;-->
-        <!--        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-        <!--      </div>-->
     </div>
 </footer><!-- End Footer -->
 
