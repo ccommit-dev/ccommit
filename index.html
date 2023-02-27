@@ -58,8 +58,15 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+    <style>
+    @media screen and (min-width: 0px) and (max-width: 1200px) {
+      #carouselExampleDark { display: none; }  /* show it on small screens */
+    }
 
-
+    @media screen and (min-width: 1201px) and (max-width: 1800px) {
+      #bannerText { display: none; }   /* hide it elsewhere */
+    }
+    </style>
 </head>
 
 <body>
@@ -102,16 +109,15 @@
 <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
 
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-<!--            <div class="col-xl-6 col-lg-8">-->
-<!--                <h1>1:1 맞춤형 <br>개발자 멘토링-->
-<!--                </h1>-->
-<!--            </div>-->
+        <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="150">
+            <div id="bannerText" class="col-xl-6 col-lg-8">
+                <h1>1:1 맞춤형 <br>개발자 멘토링
+                </h1>
+            </div>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<!--                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
                 </div>
                 <div class="carousel-inner mt-1"  style="height:330px;width: 60%; margin: auto; display: block;" >
                     <div class="carousel-item active" data-bs-interval="3000">
@@ -124,11 +130,6 @@
                         <img src="assets/img/banner/2.png" class="d-block w-350  mb-3" alt="..." style="height:330px;">
                         </a>
                     </div>
-<!--                    <div class="carousel-item">-->
-<!--                        <img src="assets/img/clients/client-4.png" class="d-block w-200  mb-3" alt="..." style="height:330px;">-->
-<!--                        <div class="carousel-caption d-none d-md-block">-->
-<!--                        </div>-->
-<!--                    </div>-->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -141,7 +142,7 @@
             </div>
         </div>
 
-        <div class="row gy-4 justify-content-center py-3" data-aos="zoom-in" data-aos-delay="250">
+        <div class="row gy-2 justify-content-center py-3" data-aos="zoom-in" data-aos-delay="250">
             <div class="col-xl-2 col-md-4">
                 <div class="icon-box">
                     <i class="bi-book fs-1"></i>
