@@ -58,7 +58,16 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+    <style>
+    @media screen and (min-width: 0px) and (max-width: 1200px) {
+      #carouselExampleDark { display: none; }  /* show it on small screens */
+    }
 
+    @media screen and (min-width: 1201px) and (max-width: 1800px) {
+      #bannerText { display: none; }   /* hide it elsewhere */
+    }
+
+    </style>
 
 </head>
 
@@ -102,20 +111,42 @@
 <main id="main">
 
     <div style="background:BLACK;">
-        <img src="assets/img/high/cc.png" width="30%" height="300" alt="..."
-             style="
+
+        <div id="carouselExampleDark">
+            <img src="assets/img/high/cc.png" width="30%" height="300" alt="..."
+                 style="
                width: 100%;
               height: 500px;
               border: 3px solid black;"
-        >
-        <div class="section-title"
-             style="padding: 5px 10px;
+            >
+            <div class="section-title"
+                 style="padding: 5px 10px;
                     text-align: left;
                     position: absolute;
                     top: 25%;
                     left: 10%;">
-            <p style="color:white;padding-top:30px;">CCOMMIT BLOG</p>
-            <h5 style="color:white;font-size: 14px; padding-top 40px; ">현직 개발자들의 지식을 공유합니다</h5>
+                <p style="color:white;padding-top:30px;">CCOMMIT BLOG</p>
+                <h5 style="color:white;font-size: 14px; padding-top 40px; ">현직 개발자들의 지식을 공유합니다</h5>
+
+            </div>
+        </div>
+        <div id="bannerText">
+            <img src="assets/img/high/ccc.png" width="30%" height="300" alt="..."
+                 style="
+               width: 100%;
+              height: 500px;
+              border: 3px solid black;"
+            >
+            <div class="section-title"
+                 style="padding: 5px 10px;
+                    text-align: left;
+                    position: absolute;
+                    top: 25%;
+                    left: 10%;">
+                <p style="color:white;padding-top:30px;">CCOMMIT BLOG</p>
+                <h5 style="color:white;font-size: 14px; padding-top 40px; ">현직 개발자들의 지식을 공유합니다</h5>
+
+            </div>
         </div>
     </div>
 
