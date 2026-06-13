@@ -126,11 +126,68 @@
   }, true)
 
   /**
+   * Track tabs (hero + curriculum)
+   */
+  const switchTrack = (track) => {
+    if (!track) return;
+
+    let heroFilters = select('#hero-flters li', true);
+    let curriculumFilters = select('#curriculum-flters li', true);
+    let heroPanels = {
+      'backend': select('#hero-backend'),
+      'game-client': select('#hero-game-client')
+    };
+    let curriculumPanels = {
+      'backend': select('#curriculum-backend'),
+      'game-client': select('#curriculum-game-client')
+    };
+    let curriculumTitle = select('#curriculum-track-title');
+
+    heroFilters.forEach(function(el) {
+      el.classList.toggle('filter-active', el.getAttribute('data-curriculum') === track);
+    });
+    curriculumFilters.forEach(function(el) {
+      el.classList.toggle('filter-active', el.getAttribute('data-curriculum') === track);
+    });
+
+    Object.keys(heroPanels).forEach(function(key) {
+      if (heroPanels[key]) {
+        heroPanels[key].style.display = key === track ? 'flex' : 'none';
+      }
+    });
+    Object.keys(curriculumPanels).forEach(function(key) {
+      if (curriculumPanels[key]) {
+        curriculumPanels[key].style.display = key === track ? 'flex' : 'none';
+      }
+    });
+
+    if (curriculumTitle) {
+      curriculumTitle.textContent = track === 'backend' ? 'Java Backend' : 'Game Client';
+    }
+
+    AOS.refresh();
+  };
+
+  on('click', '#hero-flters li', function(e) {
+    e.preventDefault();
+    switchTrack(this.getAttribute('data-curriculum'));
+  }, true);
+
+  on('click', '#curriculum-flters li', function(e) {
+    e.preventDefault();
+    switchTrack(this.getAttribute('data-curriculum'));
+  }, true);
+
+  /**
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
+
+      if (this.dataset.curriculum) {
+        switchTrack(this.dataset.curriculum)
+      }
 
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
@@ -199,39 +256,6 @@
       }
     }
   });
-
-  /**
-   * Curriculum tabs
-   */
-  let curriculumFilters = select('#curriculum-flters li', true);
-  let curriculumPanels = {
-    'backend': select('#curriculum-backend'),
-    'game-client': select('#curriculum-game-client')
-  };
-  let curriculumTitle = select('#curriculum-track-title');
-
-  if (curriculumFilters.length) {
-    on('click', '#curriculum-flters li', function(e) {
-      e.preventDefault();
-      curriculumFilters.forEach(function(el) {
-        el.classList.remove('filter-active');
-      });
-      this.classList.add('filter-active');
-
-      let track = this.getAttribute('data-curriculum');
-      Object.keys(curriculumPanels).forEach(function(key) {
-        if (curriculumPanels[key]) {
-          curriculumPanels[key].style.display = key === track ? 'flex' : 'none';
-        }
-      });
-
-      if (curriculumTitle) {
-        curriculumTitle.textContent = track === 'backend' ? 'Java Backend' : 'Game Client';
-      }
-
-      AOS.refresh();
-    }, true);
-  }
 
   /**
    * Porfolio isotope and filter

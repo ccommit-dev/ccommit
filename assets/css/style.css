@@ -492,6 +492,33 @@ h6 {
   border-color: #ffc451;
 }
 
+#hero #hero-flters {
+  padding: 0;
+  margin: 20px auto 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+#hero #hero-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+#hero #hero-flters li:hover,
+#hero #hero-flters li.filter-active {
+  color: #151515;
+  background: #ffc451;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
