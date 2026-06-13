@@ -681,6 +681,13 @@ section {
   color: #ffc451;
 }
 
+.features .icon-box .feature-track-logo {
+  width: 48px;
+  height: 48px;
+  float: left;
+  object-fit: contain;
+}
+
 .features .icon-box p {
   font-size: 15px;
   color: #848484;
