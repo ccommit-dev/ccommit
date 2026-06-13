@@ -716,6 +716,41 @@ section {
   transform: translateY(-10px);
 }
 
+.services #curriculum-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.services #curriculum-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.services #curriculum-flters li:hover,
+.services #curriculum-flters li.filter-active {
+  color: #151515;
+  background: #ffc451;
+}
+
+.services #curriculum-flters li:last-child {
+  margin-right: 0;
+}
+
+.services .curriculum-panel {
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/

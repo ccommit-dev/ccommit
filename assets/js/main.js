@@ -201,6 +201,39 @@
   });
 
   /**
+   * Curriculum tabs
+   */
+  let curriculumFilters = select('#curriculum-flters li', true);
+  let curriculumPanels = {
+    'backend': select('#curriculum-backend'),
+    'game-client': select('#curriculum-game-client')
+  };
+  let curriculumTitle = select('#curriculum-track-title');
+
+  if (curriculumFilters.length) {
+    on('click', '#curriculum-flters li', function(e) {
+      e.preventDefault();
+      curriculumFilters.forEach(function(el) {
+        el.classList.remove('filter-active');
+      });
+      this.classList.add('filter-active');
+
+      let track = this.getAttribute('data-curriculum');
+      Object.keys(curriculumPanels).forEach(function(key) {
+        if (curriculumPanels[key]) {
+          curriculumPanels[key].style.display = key === track ? 'flex' : 'none';
+        }
+      });
+
+      if (curriculumTitle) {
+        curriculumTitle.textContent = track === 'backend' ? 'Java Backend' : 'Game Client';
+      }
+
+      AOS.refresh();
+    }, true);
+  }
+
+  /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {

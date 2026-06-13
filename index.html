@@ -369,11 +369,20 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Java Backend</h2>
-                <p>커리큘럼</p>
+                <h2 id="curriculum-track-title">커리큘럼</h2>
+                <p>멘토링 코스</p>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-delay="50">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="curriculum-flters">
+                        <li data-curriculum="backend" class="filter-active">Java Backend</li>
+                        <li data-curriculum="game-client">Game Client</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="curriculum-backend" class="curriculum-panel row">
                 <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100"
                      OnClick="window.open('https://sepia-coat-481.notion.site/0-5f44fd43240c41d0a168a27c353bad64')">
                     <div class="icon-box">
@@ -496,6 +505,106 @@
 
             </div>
 
+            <div id="curriculum-game-client" class="curriculum-panel row" style="display: none;">
+                <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-braces"></i></div>
+                        <h4><a>C# 프로그래밍 기초</a></h4>
+                        <p>C# 문법 및 객체지향 기초 이해 <br>
+                            유니티 에디터 아키텍처 <br>
+                            게임 오브젝트 및 컴포넌트 시스템</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-unity"></i></div>
+                        <h4><a>2D 물리 & 애니메이션</a></h4>
+                        <p>2D 물리 엔진 (Rigidbody 2D, 콜라이더) <br>
+                            애니메이션 제어 시스템 <br>
+                            유한 상태 기계(FSM) 설계법</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-controller"></i></div>
+                        <h4><a>2D 미니게임 제작</a></h4>
+                        <p>플레이어 조작 화면 구현 <br>
+                            점수와 아이템 정보 저장 <br>
+                            완전한 형태의 2D 미니게임 완성</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4><a>협업 & 데이터 관리</a></h4>
+                        <p>데이터베이스 활용 <br>
+                            Git을 활용한 협업 방식 <br>
+                            실무 워크플로우 체득</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-box"></i></div>
+                        <h4><a>3D 그래픽스 기초</a></h4>
+                        <p>3D 물리 법칙과 수학적 원리 <br>
+                            시각적 효과 구현 <br>
+                            3D 공간으로의 확장</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-diagram-3"></i></div>
+                        <h4><a>구조 설계 & 3D 게임</a></h4>
+                        <p>디자인 패턴 기반 유연한 구조 설계 <br>
+                            기능 확장에도 무너지지 않는 설계 <br>
+                            탄탄한 3D 게임 완성</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-globe"></i></div>
+                        <h4><a>네트워크 프로그래밍</a></h4>
+                        <p>외부 서버와 통신하는 방법 <br>
+                            네트워크 프로그래밍 <br>
+                            데이터 매끄럽게 처리</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-cloud"></i></div>
+                        <h4><a>멀티플레이 & 포트폴리오</a></h4>
+                        <p>클라우드 서버 & 멀티플레이 엔진 연결 <br>
+                            네트워크 게임 직접 개발 <br>
+                            포트폴리오 제작</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-robot"></i></div>
+                        <h4><a>AI를 활용한 개발 실무</a></h4>
+                        <p>chatgpt, copilot, cursor 활용법 이해 <br>
+                            개발 생산성을 높이기 위해 AI를 실무 적용 <br>
+                            AI 결과물을 검토하고 필요한 부분을 보완</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-people"></i></div>
+                        <h4><a>취업 준비 & 서비스 운영</a></h4>
+                        <p>게임 서비스 운영 실전 <br>
+                            모의 기술 면접 & 취업 전략 <br>
+                            실무형 인재로의 최종 데뷔</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section><!-- End Services Section -->
 
@@ -503,7 +612,7 @@
     <section id="cta" class="cta">
         <div class="container" data-aos="zoom-in">
             <div class="text-center">
-                <h3>Java Backend 멘토링 모집 중</h3>
+                <h3>멘토링 모집 중</h3>
                 <p>얼리버드 코스로 처음 등록할 시 연장할 때에도 할인된 가격으로 연장 가능합니다. (1개월 단위 연장 가능)</p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
