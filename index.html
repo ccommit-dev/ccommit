@@ -415,6 +415,15 @@
                 <div class="image col-lg-6" style='background-image: url("assets/img/img777-001.jpg");'
                      data-aos="fade-right"></div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <ul id="features-flters">
+                        <li data-curriculum="backend" class="filter-active">
+                            <img src="assets/img/track/java-logo.png" alt="" class="track-tab-logo">Java Backend
+                        </li>
+                        <li data-curriculum="game-client">
+                            <img src="assets/img/track/unity-logo.png" alt="" class="track-tab-logo">Game Client
+                        </li>
+                    </ul>
+                    <div id="features-backend" class="features-track-panel">
                     <div class="icon-box" style="padding-bottom: 23px;" data-aos="zoom-in" data-aos-delay="150">
                         <i class="bi bi-laptop"></i>
                         <h4 style="padding-top: 23px;">개발자를 준비하시는 분</h4>
@@ -434,6 +443,29 @@
                     <div class="icon-box" style="padding-bottom:15px;" data-aos="zoom-in" data-aos-delay="150">
                         <i class="bi bi-server" style="font-size: 40px; padding-left: 4px; padding-top: 7px;"></i>
                         <h4 style="padding-top: 21px;">대용량 서비스를 운영하는 방법에 대해 고민해보고 싶은 분</h4>
+                    </div>
+                    </div>
+                    <div id="features-game-client" class="features-track-panel" style="display: none;">
+                        <div class="icon-box" style="padding-bottom: 23px;" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bi bi-laptop"></i>
+                            <h4 style="padding-top: 23px;">개발자를 준비하시는 분</h4>
+                        </div>
+                        <div class="icon-box" style="padding-bottom:19px;" data-aos="zoom-in" data-aos-delay="150">
+                            <img src="assets/img/track/unity-logo.png" alt="" class="feature-track-logo">
+                            <h4 style="padding-top: 15px;">UNITY 클라이언트 분야로 전환하고 싶은 분</h4>
+                        </div>
+                        <div class="icon-box" style="padding-bottom:15px;" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bi bi-book" style="font-size: 40px; padding-left: 4px; padding-top: 7px;"></i>
+                            <h4 style="padding-top: 21px;">C#/Unity 기초부터 탄탄하게 기술적으로 성장하고 싶으신 분</h4>
+                        </div>
+                        <div class="icon-box" style="padding-bottom:10px;" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bx ri-service-line" style="padding-top: 7px;"></i>
+                            <h4 style="padding-top: 17px;">현직자이시지만 게임 대기업으로 이직하고 싶으신 분</h4>
+                        </div>
+                        <div class="icon-box" style="padding-bottom:15px;" data-aos="zoom-in" data-aos-delay="150">
+                            <i class="bi bi-controller" style="font-size: 40px; padding-left: 4px; padding-top: 7px;"></i>
+                            <h4 style="padding-top: 21px;">Unity로 게임 프로젝트와 포트폴리오를 완성하고 싶은 분</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -589,8 +621,18 @@
             <div id="curriculum-game-client" class="curriculum-panel row" style="display: none;">
                 <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
+                        <div class="icon"><i class="bi bi-signpost"></i></div>
+                        <h4><a>
+                            사전 준비</a></h4>
+                        <p>기존 포트폴리오 정리 <br>
+                            목표 회사 & 도메인 정하기 <br>
+                            성장하는 개발자 마음가짐 탐구 </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-box">
                         <div class="icon"><i class="bi bi-braces"></i></div>
-                        <h4><a>C# 프로그래밍 기초</a></h4>
+                        <h4><a>이론 공부</a></h4>
                         <p>C# 문법 및 객체지향 기초 이해 <br>
                             유니티 에디터 아키텍처 <br>
                             게임 오브젝트 및 컴포넌트 시스템</p>
@@ -599,7 +641,7 @@
                 <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-unity"></i></div>
-                        <h4><a>2D 물리 & 애니메이션</a></h4>
+                        <h4><a>2D 이론 공부</a></h4>
                         <p>2D 물리 엔진 (Rigidbody 2D, 콜라이더) <br>
                             애니메이션 제어 시스템 <br>
                             유한 상태 기계(FSM) 설계법</p>
@@ -609,36 +651,36 @@
                 <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-controller"></i></div>
-                        <h4><a>2D 미니게임 제작</a></h4>
+                        <h4><a>2D 프로젝트 진행</a></h4>
                         <p>플레이어 조작 화면 구현 <br>
                             점수와 아이템 정보 저장 <br>
                             완전한 형태의 2D 미니게임 완성</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a>협업 & 데이터 관리</a></h4>
-                        <p>데이터베이스 활용 <br>
-                            Git을 활용한 협업 방식 <br>
-                            실무 워크플로우 체득</p>
-                    </div>
-                </div>
+<!--                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">-->
+<!--                    <div class="icon-box">-->
+<!--                        <div class="icon"><i class="bx bx-file"></i></div>-->
+<!--                        <h4><a>협업 & 데이터 관리</a></h4>-->
+<!--                        <p>데이터베이스 활용 <br>-->
+<!--                            Git을 활용한 협업 방식 <br>-->
+<!--                            실무 워크플로우 체득</p>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-box"></i></div>
-                        <h4><a>3D 그래픽스 기초</a></h4>
+                        <h4><a>3D 이론 공부</a></h4>
                         <p>3D 물리 법칙과 수학적 원리 <br>
                             시각적 효과 구현 <br>
-                            3D 공간으로의 확장</p>
+                            3D 그래픽스 공간으로의 확장</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-diagram-3"></i></div>
-                        <h4><a>구조 설계 & 3D 게임</a></h4>
+                        <h4><a>3D 프로젝트 진행</a></h4>
                         <p>디자인 패턴 기반 유연한 구조 설계 <br>
                             기능 확장에도 무너지지 않는 설계 <br>
                             탄탄한 3D 게임 완성</p>
@@ -668,10 +710,12 @@
                 <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-cloud"></i></div>
-                        <h4><a>네트워크 & 포트폴리오</a></h4>
-                        <p>멀티플레이 엔진 연결 <br>
-                            네트워크 게임 직접 개발 <br>
-                            포트폴리오 제작</p>
+                        <h4><a>게임 서버 개발</a></h4>
+                        <p>
+                            TCP/UDP 소켓 프로그래밍 <br>
+                            게임 네트워크 프로그래밍 학습 <br>
+                            멀티플레이 게임 서버 연동
+                        </p>
                     </div>
                 </div>
 
@@ -688,10 +732,10 @@
                 <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-people"></i></div>
-                        <h4><a>취업 준비 & 서비스 운영</a></h4>
+                        <h4><a>취업 지원 </a></h4>
                         <p>3N 지원 전략 지원 <br>
                             모의 기술 면접 & 취업 전략 <br>
-                            게임 서비스 운영 실전</p>
+                            면접 피드백 진행</p>
                     </div>
                 </div>
             </div>
@@ -755,7 +799,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Java Backend</h2>
+                <h2>Repositories</h2>
                 <p>프로젝트</p>
             </div>
 
@@ -1203,7 +1247,7 @@
                         </div>
                         <div class="member-info" style="padding-top:1px;">
                             <a style="color:#FFC451; img-fluid;">Alex</a> <br>
-                            <strong> - 넥슨 서버 개발자</strong>
+                            <strong> - 넥슨 개발자</strong>
                             <hr style="margin:0.5rem"/>
                             <span>- 카카오, 넷마블 등 여러 대기업 최종 합격 </span>
                             <span>- 개발 경력 9년 이상, 수업 경력 5년 이상 </span>

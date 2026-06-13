@@ -126,53 +126,78 @@
   }, true)
 
   /**
-   * Track tabs (hero + curriculum)
+   * Track tabs (hero + features + curriculum)
    */
-  const switchTrack = (track) => {
-    if (!track) return;
+const switchTrack = (track) => {
+  if (!track) return;
 
-    let heroFilters = select('#hero-flters li', true);
-    let curriculumFilters = select('#curriculum-flters li', true);
-    let heroPanels = {
-      'backend': select('#hero-backend'),
-      'game-client': select('#hero-game-client')
-    };
-    let curriculumPanels = {
-      'backend': select('#curriculum-backend'),
-      'game-client': select('#curriculum-game-client')
-    };
-    let curriculumTitle = select('#curriculum-track-title');
+  let trackFilters = select(
+    '#hero-flters li, #features-flters li, #curriculum-flters li',
+    true
+  );
 
-    heroFilters.forEach(function(el) {
-      el.classList.toggle('filter-active', el.getAttribute('data-curriculum') === track);
-    });
-    curriculumFilters.forEach(function(el) {
-      el.classList.toggle('filter-active', el.getAttribute('data-curriculum') === track);
-    });
-
-    Object.keys(heroPanels).forEach(function(key) {
-      if (heroPanels[key]) {
-        heroPanels[key].style.display = key === track ? 'flex' : 'none';
-      }
-    });
-    Object.keys(curriculumPanels).forEach(function(key) {
-      if (curriculumPanels[key]) {
-        curriculumPanels[key].style.display = key === track ? 'flex' : 'none';
-      }
-    });
-
-    if (curriculumTitle) {
-      curriculumTitle.textContent = track === 'backend' ? 'Java Backend' : 'Game Client';
-    }
-
-    AOS.refresh();
+  let heroPanels = {
+    backend: select('#hero-backend'),
+    'game-client': select('#hero-game-client')
   };
 
-  on('click', '#hero-flters li', function(e) {
+  let featuresPanels = {
+    backend: select('#features-backend'),
+    'game-client': select('#features-game-client')
+  };
+
+  let curriculumPanels = {
+    backend: select('#curriculum-backend'),
+    'game-client': select('#curriculum-game-client')
+  };
+
+  let curriculumTitle = select('#curriculum-track-title');
+
+  trackFilters.forEach(function (el) {
+    el.classList.toggle(
+      'filter-active',
+      el.getAttribute('data-curriculum') === track
+    );
+  });
+
+  Object.keys(featuresPanels).forEach(function (key) {
+    if (featuresPanels[key]) {
+      featuresPanels[key].style.display =
+        key === track ? 'block' : 'none';
+    }
+  });
+
+  Object.keys(heroPanels).forEach(function (key) {
+    if (heroPanels[key]) {
+      heroPanels[key].style.display =
+        key === track ? 'flex' : 'none';
+    }
+  });
+
+  Object.keys(curriculumPanels).forEach(function (key) {
+    if (curriculumPanels[key]) {
+      curriculumPanels[key].style.display =
+        key === track ? 'flex' : 'none';
+    }
+  });
+
+  if (curriculumTitle) {
+    curriculumTitle.textContent =
+      track === 'backend' ? 'Java Backend' : 'Game Client';
+  }
+
+  AOS.refresh();
+};
+
+on(
+  'click',
+  '#hero-flters li, #features-flters li, #curriculum-flters li',
+  function (e) {
     e.preventDefault();
     switchTrack(this.getAttribute('data-curriculum'));
-  }, true);
-
+  },
+  true
+);
   on('click', '#curriculum-flters li', function(e) {
     e.preventDefault();
     switchTrack(this.getAttribute('data-curriculum'));

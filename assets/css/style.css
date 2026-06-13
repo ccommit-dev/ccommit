@@ -1647,3 +1647,35 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.features #features-flters {
+  padding: 0;
+  margin: 0 0 20px 0;
+  list-style: none;
+  text-align: left;
+}
+.features #features-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: #444444;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+.features #features-flters li:hover,
+.features #features-flters li.filter-active {
+  color: #151515;
+  background: #ffc451;
+}
+.features #features-flters .track-tab-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+  object-fit: contain;
+}
