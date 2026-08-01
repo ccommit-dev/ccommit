@@ -148,7 +148,8 @@ const switchTrack = (track) => {
 
   let curriculumPanels = {
     backend: select('#curriculum-backend'),
-    'game-client': select('#curriculum-game-client')
+    'game-client': select('#curriculum-game-client'),
+    'ml-ops': select('#curriculum-ml-ops')
   };
 
   let curriculumTitle = select('#curriculum-track-title');
@@ -182,8 +183,12 @@ const switchTrack = (track) => {
   });
 
   if (curriculumTitle) {
-    curriculumTitle.textContent =
-      track === 'backend' ? 'Java Backend' : 'Game Client';
+    const titles = {
+      backend: 'Java Backend',
+      'game-client': 'Game Client',
+      'ml-ops': 'ML Ops'
+    };
+    curriculumTitle.textContent = titles[track] || '커리큘럼';
   }
 
   AOS.refresh();
