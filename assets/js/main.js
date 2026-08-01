@@ -138,12 +138,14 @@ const switchTrack = (track) => {
 
   let heroPanels = {
     backend: select('#hero-backend'),
-    'game-client': select('#hero-game-client')
+    'game-client': select('#hero-game-client'),
+    'ml-ops': select('#hero-ml-ops')
   };
 
   let featuresPanels = {
     backend: select('#features-backend'),
-    'game-client': select('#features-game-client')
+    'game-client': select('#features-game-client'),
+    'ml-ops': select('#features-ml-ops')
   };
 
   let curriculumPanels = {

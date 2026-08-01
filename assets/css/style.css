@@ -519,6 +519,7 @@ h6 {
   margin-right: 6px;
   vertical-align: middle;
   object-fit: contain;
+  filter: grayscale(100%);
 }
 
 #hero #hero-flters li:hover,
@@ -686,6 +687,7 @@ section {
   height: 48px;
   float: left;
   object-fit: contain;
+  filter: grayscale(100%);
 }
 
 .features .icon-box p {
@@ -1678,4 +1680,5 @@ section {
   margin-right: 6px;
   vertical-align: middle;
   object-fit: contain;
+  filter: grayscale(100%);
 }
