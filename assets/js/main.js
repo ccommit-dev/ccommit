@@ -138,20 +138,29 @@ const switchTrack = (track) => {
 
   let heroPanels = {
     backend: select('#hero-backend'),
-    'game-client': select('#hero-game-client')
+    'game-client': select('#hero-game-client'),
+    'ml-ops': select('#hero-ml-ops')
   };
 
   let featuresPanels = {
     backend: select('#features-backend'),
-    'game-client': select('#features-game-client')
+    'game-client': select('#features-game-client'),
+    'ml-ops': select('#features-ml-ops')
   };
 
   let curriculumPanels = {
     backend: select('#curriculum-backend'),
-    'game-client': select('#curriculum-game-client')
+    'game-client': select('#curriculum-game-client'),
+    'ml-ops': select('#curriculum-ml-ops')
   };
 
   let curriculumTitle = select('#curriculum-track-title');
+
+  let trackTitles = {
+    backend: 'Java Backend',
+    'game-client': 'Game Client',
+    'ml-ops': 'ML Ops'
+  };
 
   trackFilters.forEach(function (el) {
     el.classList.toggle(
@@ -182,8 +191,7 @@ const switchTrack = (track) => {
   });
 
   if (curriculumTitle) {
-    curriculumTitle.textContent =
-      track === 'backend' ? 'Java Backend' : 'Game Client';
+    curriculumTitle.textContent = trackTitles[track] || '커리큘럼';
   }
 
   AOS.refresh();
