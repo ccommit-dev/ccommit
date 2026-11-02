@@ -377,6 +377,10 @@ on(
   /**
    * Initiate Pure Counter 
    */
-  if (typeof PureCounter !== 'undefined') new PureCounter();
+  // 숫자는 크롤러용으로 HTML 에 미리 적혀 있다. 브라우저에서는 애니메이션 전에 비워서 기존 화면과 같게 둔다.
+  if (typeof PureCounter !== 'undefined') {
+    select('.purecounter', true).forEach(el => el.textContent = '');
+    new PureCounter();
+  }
 
 })()
