@@ -193,7 +193,7 @@ const switchTrack = (track) => {
     curriculumTitle.textContent = titles[track] || '커리큘럼';
   }
 
-  AOS.refresh();
+  if (typeof AOS !== 'undefined') AOS.refresh();
 };
 
 on(
@@ -256,7 +256,7 @@ on(
   /**
    * Clients Slider
    */
-  new Swiper('.clients-slider', {
+  if (typeof Swiper !== 'undefined') new Swiper('.clients-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -294,7 +294,7 @@ on(
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
+    if (portfolioContainer && typeof Isotope !== 'undefined') {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item'
       });
@@ -312,7 +312,7 @@ on(
           filter: this.getAttribute('data-filter')
         });
         portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
+          if (typeof AOS !== 'undefined') AOS.refresh()
         });
       }, true);
     }
@@ -322,14 +322,14 @@ on(
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
+  if (typeof GLightbox !== 'undefined') GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  if (typeof Swiper !== 'undefined') new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -346,7 +346,7 @@ on(
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  if (typeof Swiper !== 'undefined') new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -365,6 +365,7 @@ on(
    * Animation on scroll
    */
   window.addEventListener('load', () => {
+    if (typeof AOS === 'undefined') return;
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
@@ -376,6 +377,6 @@ on(
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+  if (typeof PureCounter !== 'undefined') new PureCounter();
 
 })()
