@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /inner-page.html
+Disallow: /forms/
+Disallow: /tools/
+
+Sitemap: https://www.ccommit.kr/sitemap.xml

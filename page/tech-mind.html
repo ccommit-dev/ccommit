@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>ccommit - 개발자 취업은 씨커밋</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ccommit.k">
-    <meta property="og:title" content="개발자 멘토링">
-    <meta property="og:description" content="1:1 맞춤형 개발자 멘토링 서비스">
+    <title>지속적 성장하는 개발자 마인드 | 씨커밋 ccommit</title>
+    <meta name="description" content="개발자 커리어는 장거리 마라톤입니다. 번아웃 없이 롱런하기 위한 메타인지, 중단기 목표 설정, 동기부여 방법을 현직 멘토가 정리했습니다.">
+    <link rel="canonical" href="https://www.ccommit.kr/page/tech-mind.html">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="씨커밋 ccommit">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://www.ccommit.kr/page/tech-mind.html">
+    <meta property="og:title" content="지속적 성장하는 개발자 마인드 | 씨커밋 ccommit">
+    <meta property="og:description" content="개발자 커리어는 장거리 마라톤입니다. 번아웃 없이 롱런하기 위한 메타인지, 중단기 목표 설정, 동기부여 방법을 현직 멘토가 정리했습니다.">
     <meta property="og:image" content="https://www.ccommit.kr/assets/img/favicon/subnail.png">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1440">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="지속적 성장하는 개발자 마인드 | 씨커밋 ccommit">
+    <meta name="twitter:description" content="개발자 커리어는 장거리 마라톤입니다. 번아웃 없이 롱런하기 위한 메타인지, 중단기 목표 설정, 동기부여 방법을 현직 멘토가 정리했습니다.">
+    <meta name="twitter:image" content="https://www.ccommit.kr/assets/img/favicon/subnail.png">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "지속적 성장하는 개발자 마인드",
+  "url": "https://www.ccommit.kr/page/tech-mind.html",
+  "mainEntityOfPage": "https://www.ccommit.kr/page/tech-mind.html",
+  "image": "https://www.ccommit.kr/assets/img/blog/mind1.webp",
+  "inLanguage": "ko-KR",
+  "datePublished": "2023-02-14",
+  "dateModified": "2025-12-27",
+  "author": {
+    "@type": "Person",
+    "name": "Alex",
+    "url": "https://www.ccommit.kr/#team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.ccommit.kr/#organization",
+    "name": "ccommit",
+    "alternateName": [
+      "씨커밋",
+      "CCOMMIT"
+    ],
+    "url": "https://www.ccommit.kr/",
+    "logo": "https://www.ccommit.kr/assets/img/favicon/LOGO.png",
+    "description": "현직 개발자가 1:1로 진행하는 개발자 취업·이직 멘토링 서비스"
+  }
+}
+    </script>
     <meta name="naver-site-verification" content="ecbbc1a8d8efd794e1b0e5b10b9dda9491890983"/>
     <meta name="google-site-verification" content="T12CU9sPh23jMEebIWWDqVa-5Rh_Zu_WYn_UQr-BmHc"/>
 
@@ -33,7 +72,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="../assets/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Google Fonts -->
@@ -80,12 +119,8 @@
       border-left: 10px solid #27a9e3;
         font-weight: bold;
     }
-    @media screen and (min-width: 0px) and (max-width: 1200px) {
-      #carouselExampleDark { display: none; }  /* show it on small screens */
-    }
-
-    @media screen and (min-width: 1201px) and (max-width: 1800px) {
-      #bannerText { display: none; }   /* hide it elsewhere */
+    @media screen and (min-width: 1201px) {
+      .post-title { padding-left: 215px; }
     }
     </style>
 </head>
@@ -95,18 +130,17 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top" style="background-color: black;">
     <div class="container d-flex align-items-center justify-content-lg-between">
-        <h1 class="logo me-auto me-lg-0">
+        <div class="logo me-auto me-lg-0">
             <a href="../index.html#hero">
                 <img class="img-fluid mb-1"
-                     alt="../assets/img/favicon/LOGO.png"
                      src="../assets/img/favicon/favicon3.png"
-                     width="50" height="30" alt="..."
+                     width="50" height="30" alt="ccommit 로고"
                      onmouseleave="this.src='assets/img/favicon/favicon3.png'"
                      onmouseover="this.src='assets/img/favicon/LOGO.png'"
                 />
                 ccommit
             </a>
-        </h1>
+        </div>
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
@@ -133,12 +167,9 @@
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h2 id="carouselExampleDark" style="padding-left:215px;">
+                <h1 class="post-title">
                     <b>[TECH] 지속적 성장하는 개발자 마인드</b>
-                </h2>
-                <h2 id="bannerText">
-                    <b>[TECH] 지속적 성장하는 개발자 마인드</b>
-                </h2>
+                </h1>
             </div>
         </div>
     </section><!-- End Breadcrumbs -->
@@ -160,7 +191,7 @@
                             <li style="list-style-type:square;">짧은 기간 벼락치기로 좋은 성과를 낼 순 있지만, 필연적으로 burn-out이 올 수 있습니다. 보다 롱런할수있는 개발자는 마인드를 관리해야합니다.</li>
                             <li style="list-style-type:square;">배움의 자세가 제일 중요합니다. 그러기 위해선 내가 현재 알고 있는 지식과 모르는 지식을 분리할 줄 알아야 합니다. </li>
                             <li style="list-style-type:square;">이것을 Meta 인지라 하는데 모르는 것을 탐구하여 내 것으로 만든 후 면접 뿐만 아니라 취업 후 회사 에서도 효율적으로 동기부여 하는 법을 알려드리겠습니다.</li>
-<!--                            <img src="../assets/img/blog/mind1.jpg" alt="" class="img-fluid"-->
+<!--                            <img loading="lazy" src="../assets/img/blog/mind1.webp" alt="" class="img-fluid"-->
 <!--                                 style="display:block; margin-left:auto; margin-right:auto; width: 30%; height:30%;">-->
                         </ul>
 
@@ -174,7 +205,7 @@
                                 참석하여 장기적 커리어에 어떤 부분이 적합하고 도움이 될지 경험을 쌓으시는 것을 추천해 드립니다.</li>
 
 
-                            <img src="../assets/img/blog/mind4.jpg" alt="" class="img-fluid"
+                            <img loading="lazy" src="../assets/img/blog/mind4.jpg" alt="" class="img-fluid"
                                  style="display:block; margin-left:auto; margin-right:auto;">
                             <blockquote>"성공의 비밀은 한 번 더 시도해 보는 것이다." - 토마스 에디슨</blockquote>
 
@@ -190,7 +221,7 @@
                                 좋은 방법입니다. 취업/이직을 떠나서 인생을 살아가면서 동기부여는 건강을 위한 운동, 균형 잡힌 식습관, 질 좋은 수면 등과 같이 건강한 인생을 살기 위한
                                 필수인 요건을 생각합니다. 한마디로 요약하자면 동기부여를 위한 경험 또는 실패를 많이 하자입니다!</li>
 
-                            <img src="../assets/img/blog/mind5.jpg" alt="" class="img-fluid"
+                            <img loading="lazy" src="../assets/img/blog/mind5.webp" alt="" class="img-fluid"
                                  style="display:block; margin-left:auto; margin-right:auto;width: 30%; height:30%;">
                             <blockquote>"성공은 두 번째로 실패한 것을 다시 시도하는 것이다." - 월트 디즈니</blockquote>
 
@@ -198,7 +229,7 @@
                                 있습니다. 당시 저는 초등학교 6학년이었고 32강전에서 초등학교 2학년 테란 유저의 학생에게 패배하면서 나는 게임에 소질이 없나 라고 생각한 적이 있습니다.
                                 하지만 이 경험은 훗날 저에게 게임 개발자의 길을 연결해 주었고, 또 현재는 서버 엔지니어로서 일을 할 수 있는 밑거름이 되었습니다. 지금은 성공을 위한 실패의 과정이라고 생각합니다.</li>
 
-                            <img src="../assets/img/blog/mind3.jpg" alt="" class="img-fluid"
+                            <img loading="lazy" src="../assets/img/blog/mind3.webp" alt="" class="img-fluid"
                                  style="display:block; margin-left:auto; margin-right:auto;width: 70%; height:70%;">
                             <li>또 다른 실패의 예시로는 부끄럽지만, 몇 년 전 가상화폐와 투자시장이 활발했을 때 뒤늦게 주변의 분위기에 휩쓸려 적지않은 돈을 잃은 적이 있습니다. 이때 경제에 대해
                                 공부하게 되었고 금리가 무엇인지, 세계정세와 정치가 경제에 어떻게 영향을 미치는지 관심을 가지게 되었습니다. 무엇보다도 돈의 속성을 깨달은 것 같습니다.
@@ -210,7 +241,7 @@
                     </div>
                     <div class="portfolio-info">
                         <h3>결과</h3>
-                        <img src="../assets/img/blog/mind2.jpg" alt="" class="img-fluid"
+                        <img loading="lazy" src="../assets/img/blog/mind2.jpg" alt="" class="img-fluid"
                              style="display:block; margin-left:auto; margin-right:auto;width: 70%; height:70%;">
                         <ol style="padding-left:2.0em">
                             <li>실패와 경험은 성공을 위한 동기부여를 준다.</li>
@@ -255,7 +286,7 @@
                     <div class="footer-info">
                         <h3 class="logo me-auto me-lg-0">
                             <a href="index.html#footer" style="color:white">
-                                <img class="img-fluid mb-1"
+                                <img loading="lazy" class="img-fluid mb-1"
                                      src="../assets/img/favicon/LOGO.png"
                                      alt="../assets/img/favicon/LOGO.png"
                                      width="30" height="20" alt="..."
